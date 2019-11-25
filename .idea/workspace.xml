@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="73188ae7-a961-4f1c-a15e-d85fc8c24f70" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/pages/front/profil/DashboardTEst.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/pages/front/profil/ProfilStudents.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/lang/fr.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/lang/fr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/auth/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/auth/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PoemMenu.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PoemMenu.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/front/Dashboard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/front/Dashboard.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/front/Profil.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/front/Profil.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -84,8 +76,16 @@
       <workItem from="1574089011660" duration="260000" />
       <workItem from="1574158449460" duration="20739000" />
       <workItem from="1574239309943" duration="598000" />
-      <workItem from="1574673870078" duration="1824000" />
+      <workItem from="1574673870078" duration="2610000" />
     </task>
+    <task id="LOCAL-00001" summary="Access database done">
+      <created>1574677584418</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1574677584418</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -103,5 +103,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Access database done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Access database done" />
   </component>
 </project>
