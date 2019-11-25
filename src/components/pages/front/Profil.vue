@@ -3,16 +3,19 @@
   <div class="inputs">
     <h1 v-if="authenticated"> {{$t('menu.profile')}} </h1>
     <h1 v-else> {{$t('menu.registration')}} </h1>
-
     <!-- infos personnelles -->
     <div class="basics">
       <h1> {{$t('profile.userAccount')}} </h1>
       <form id="form-profil" @submit.prevent='register'>
         <div class="col2">
+          <label for="role">{{$t('login.role')}}</label>
+
+        </div>
+        <div class="col2">
           <label for="email"> {{$t('login.email')}} </label>
           <div class="input-group">
-            <input type="email" id="email" name="email" required 
-              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" :title="$t('profile.emailHint')" 
+            <input type="email" id="email" name="email" required
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" :title="$t('profile.emailHint')"
               v-model="email"
             />
           </div>
@@ -47,8 +50,8 @@
           <label for="passwd"> {{$t('login.pass')}} </label>
           <div class="input-group">
             <input type="password" id="passwd" name="passwd" minlength="8" required
-              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
-              :title="$t('profile.passwordHint')" 
+              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+              :title="$t('profile.passwordHint')"
               v-model="password"
             />
             <button type="button"><i class="fa fa-eye-slash" aria-hidden="true"></i></button>
@@ -58,7 +61,7 @@
         <div class="col2">
           <label for="confirm"> {{$t('profile.confirmation')}} </label>
           <div class="input-group">
-            <input type="password" id="passwd" name="passwd" required @input="checkMatching" 
+            <input type="password" id="passwd" name="passwd" required @input="checkMatching"
               v-model="confirm"
             />
             <button type="button"><i class="fa fa-eye-slash" aria-hidden="true"></i></button>
@@ -69,7 +72,7 @@
         <div class="clearfix"></div>
         <div class="validate">
           <input v-if="authenticated" type="submit" class="btn" :value="$t('profile.save')" />
-          <input v-else type="submit" class="btn" :value="$t('profile.create')" /> 
+          <input v-else type="submit" class="btn" :value="$t('profile.create')" />
         </div>
       </form>
     </div>

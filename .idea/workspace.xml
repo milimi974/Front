@@ -1,24 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="73188ae7-a961-4f1c-a15e-d85fc8c24f70" name="Default Changelist" comment="" />
+    <list default="true" id="73188ae7-a961-4f1c-a15e-d85fc8c24f70" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/pages/front/profil/DashboardTEst.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pages/front/profil/ProfilStudents.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/lang/fr.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/lang/fr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/auth/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/auth/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PoemMenu.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PoemMenu.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/front/Dashboard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/front/Dashboard.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/front/Profil.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/front/Profil.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="PATH_TO_GIT" value="D:\Logiciels\Git\bin\git.exe" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
   <component name="ProjectId" id="1SpgJVxf4yCsNvqwYhitZ2YzIHw" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../Programmation/Tuto/VueJs" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.standard" value="" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.2.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Documents\POEM\Vue\Test\poem-frontend-master\src\components\pages\front\profil" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -57,11 +79,29 @@
       <workItem from="1572437599773" duration="2951000" />
       <workItem from="1572527323284" duration="55000" />
       <workItem from="1572531585784" duration="1013000" />
-      <workItem from="1572857069905" duration="1245000" />
+      <workItem from="1572857069905" duration="29515000" />
+      <workItem from="1574086082747" duration="2476000" />
+      <workItem from="1574089011660" duration="260000" />
+      <workItem from="1574158449460" duration="20739000" />
+      <workItem from="1574239309943" duration="598000" />
+      <workItem from="1574673870078" duration="1824000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

@@ -36,7 +36,6 @@ export default {
         if (redirect) router.push(redirect)
       })
   },
-
   // To log out, we just need to remove the token
   logout () {
     axios.post(LOGOUT_URL + '?access_token=' + window.localStorage.getItem('id_token'))
@@ -45,6 +44,13 @@ export default {
       })
     window.localStorage.clear()
     user.authenticated = false
+  },
+
+  updateUser (creds) {
+    axios.put('poem_users/7', creds)
+      .then(response => {
+        notifyInfo('messages.update')
+      })
   },
 
   getUser () {

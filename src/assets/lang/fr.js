@@ -12,6 +12,7 @@ export default {
   no: 'non',
   menu: {
     about: 'À propos',
+    dashboardtest: 'teeeest',
     dashboard: 'Mon tableau de bord',
     explorer: 'Explorateur des leçons',
     home: 'Accueil',
@@ -62,6 +63,10 @@ export default {
     registrationSaved: {
       title: 'Inscription enregistrée',
       content: 'Vous pouvez dès à présent commencer la première étape de l\'évaluation.'
+    },
+    update: {
+      title: 'Modification enregistrée',
+      content: 'Votre modification a bien été enregistrée'
     },
     welcome: {
       title: 'Bienvenue sur POEM !',

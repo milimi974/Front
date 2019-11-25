@@ -1,8 +1,7 @@
 <template>
   <poem-main page-title="Mon tableau de bord" page-name="dashboard">
-    <div class="list"> 
-      <h1>Mes leçons</h1> 
-
+    <div class="list">
+      <h1>Mes leçons</h1>
       <table>
         <thead>
           <tr>
@@ -20,7 +19,6 @@
             <td v-if="l.grade">{{ l.grade }} / 20</td>
             <td v-else><i>non disponible</i></td>
             <td><router-link :to="'/lesson/' + l.id" class="btn" title="Continuer cette leçon">continuer</router-link></td>
-
           </tr>
         </tbody>
       </table>

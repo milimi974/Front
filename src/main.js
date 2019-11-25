@@ -5,9 +5,11 @@ import VueRouter from 'vue-router'
 import axios from 'axios'
 
 import Dashboard from 'components/pages/front/Dashboard'
+import DashboardTEst from 'components/pages/front/profil/DashboardTEst'
 import Explorer from 'components/pages/front/Explorer'
 import Lesson from 'components/pages/front/Lesson'
 import Profil from 'components/pages/front/Profil'
+import ProfilStudents from 'components/pages/front/profil/ProfilStudents'
 import Legal from 'components/pages/front/Legal'
 import About from 'components/pages/front/About'
 import Home from 'components/pages/front/Home'
@@ -48,9 +50,14 @@ export var router = new VueRouter({
         user.authenticated ? next() : next('/')
       }
     },
+    { path: '/profil/DashboardTEst', component: DashboardTEst,
+      beforeEnter: (to, from, next) => {
+        user.authenticated ? next() : next('/')
+      }
+    },
     { path: '/explorer', component: Explorer },
-    { path: '/profil', component: Profil,
-      beforeEnter: (to, from, next) => user.authenticated ? next() : next('/registration')
+    { path: '/profil/ProfilStudents', component: ProfilStudents,
+      beforeEnter: (to, from, next) => user.authenticated ? next() : next('/')
     },
     { path: '/registration', component: Profil,
       beforeEnter: (to, from, next) => user.authenticated ? next('/profil') : next()

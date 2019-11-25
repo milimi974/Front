@@ -4,10 +4,13 @@
       <router-link class="nav-item" tag="li" to="/dashboard">
         <a class="nav-link" :title="$t('tooltip.dashboard')"> {{$t('menu.dashboard')}} </a>
       </router-link>
+      <router-link class="nav-item" tag="li" to="/profil/DashboardTEst">
+        <a class="nav-link" :title="$t('tooltip.dashboard')"> {{$t('menu.dashboardtest')}} </a>
+      </router-link>
       <router-link class="nav-item" tag="li" to="/explorer">
         <a class="nav-link" :title="$t('tooltip.explorer')"> {{$t('menu.explorer')}} </a>
       </router-link>
-      <router-link class="nav-item" tag="li" to="/profil">
+      <router-link class="nav-item" tag="li" to="/profil/ProfilStudents">
         <a class="nav-link" :title="$t('tooltip.profile')"> {{$t('menu.profile')}} </a>
       </router-link>
       <li class="nav-item">
