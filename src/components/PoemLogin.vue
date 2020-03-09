@@ -10,7 +10,7 @@
         <!-- 2ieme patern ici : http://html5pattern.com/Passwords -->
         <!-- minlength="8"
         pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" -->
-        <input type="password" id="passwd" name="passwd" required="" 
+        <input type="password" id="passwd" name="passwd" required=""
         v-model='credentials.password'
         />
         <button type="button"><i class="fa fa-eye-slash" aria-hidden="true"></i></button>
@@ -59,7 +59,7 @@ export default {
   },
   methods: {
     submit () {
-      auth.login(this.credentials, 'dashboard')
+      auth.login(this.credentials, 'Home')
     }
   }
 }

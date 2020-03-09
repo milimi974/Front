@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="73188ae7-a961-4f1c-a15e-d85fc8c24f70" name="Default Changelist" comment="VM ok">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/collet.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/pages/front/profil/ProfilTeacher.vue" afterDir="false" />
+    <list default="true" id="73188ae7-a961-4f1c-a15e-d85fc8c24f70" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/ProjectSettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/VSWorkspaceState.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/poem-frontend-master/v15/.suo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/slnx.sqlite" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/config/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/lang/en.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/lang/en.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/lang/fr.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/lang/fr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/front.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/css/front.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PoemLogin.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PoemLogin.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/PoemMenu.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PoemMenu.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/pages/front/Profil.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/front/Profil.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/front/profil/DashboardTEst.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/front/profil/DashboardProf.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/pages/front/profil/ProfilStudents.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/front/profil/ProfilStudents.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/poemjs/init-lesson.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/poemjs/init-lesson.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +116,7 @@
       <workItem from="1582409200928" duration="275000" />
       <workItem from="1583325115942" duration="7438000" />
       <workItem from="1583515341895" duration="162000" />
-      <workItem from="1583748877270" duration="279000" />
+      <workItem from="1583748877270" duration="7745000" />
     </task>
     <task id="LOCAL-00001" summary="Access database done">
       <created>1574677584418</created>
@@ -124,7 +125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574677584418</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="VM ok">
+      <created>1583749166275</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1583749166275</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -163,9 +171,10 @@
       <screen x="0" y="23" width="1440" height="797" />
     </state>
     <state x="462" y="171" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.797@0.23.1440.797" timestamp="1575462758500" />
-    <state x="331" y="52" key="CommitChangelistDialog2" timestamp="1583748967159">
+    <state x="331" y="52" key="CommitChangelistDialog2" timestamp="1583749165836">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state x="331" y="52" key="CommitChangelistDialog2/1440.0.1920.1200/0.0.1440.900@0.0.1440.900" timestamp="1583749165836" />
     <state x="331" y="52" key="CommitChangelistDialog2/1440.23.1920.1177/0.0.1440.900@0.0.1440.900" timestamp="1583748967159" />
     <state x="100" y="100" width="1240" height="700" key="DiffContextDialog" timestamp="1579009341510">
       <screen x="0" y="23" width="1440" height="798" />
@@ -191,6 +200,10 @@
       <screen x="0" y="23" width="1440" height="797" />
     </state>
     <state x="233" y="56" key="SettingsEditor/0.23.1440.797@0.23.1440.797" timestamp="1575464750722" />
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1583749175696">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/1440.0.1920.1200/0.0.1440.900@0.0.1440.900" timestamp="1583749175696" />
     <state x="525" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1583748899021">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

@@ -1,7 +1,7 @@
 <template>
   <div id="poem-menu" >
     <ul class="nav navbar-nav" v-if="user.authenticated">
-        <template v-if="statu=='student'">
+        <template v-if="this.statu=='student'">
           <router-link class="nav-item" tag="li" to="/dashboard">
             <a class="nav-link" :title="$t('tooltip.dashboard')"> {{$t('menu.dashboard')}} </a>
           </router-link>
@@ -16,7 +16,7 @@
           </li>
         </template>
         <template v-else>
-          <router-link class="nav-item" tag="li" to="/profil/DashboardTEst">
+          <router-link class="nav-item" tag="li" to="/profil/DashboardProf">
             <a class="nav-link" :title="$t('tooltip.dashboard')"> {{$t('menu.dashboard')}} </a>
           </router-link>
           <router-link class="nav-item" tag="li" to="/profil/ProfilTeacher">

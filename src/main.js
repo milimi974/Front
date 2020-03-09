@@ -5,12 +5,12 @@ import VueRouter from 'vue-router'
 import axios from 'axios'
 
 import Dashboard from 'components/pages/front/Dashboard'
-import DashboardTEst from 'components/pages/front/profil/DashboardTEst'
 import Explorer from 'components/pages/front/Explorer'
 import Lesson from 'components/pages/front/Lesson'
 import Profil from 'components/pages/front/Profil'
 import ProfilStudents from 'components/pages/front/profil/ProfilStudents'
 import ProfilTeacher from 'components/pages/front/profil/ProfilTeacher'
+import DashboardProf from 'components/pages/front/profil/DashboardProf'
 import Legal from 'components/pages/front/Legal'
 import About from 'components/pages/front/About'
 import Home from 'components/pages/front/Home'
@@ -33,7 +33,7 @@ var locales = {en, fr}
 Object.keys(locales).forEach(function (lang) {
   Vue.locale(lang, locales[lang])
 })
-Vue.config.lang = user.lang ? user.lang : 'en'
+Vue.config.lang = user.lang ? user.lang : 'fr'
 
 axios.defaults.baseURL = backendUrl
 axios.defaults.headers.common['Authorization'] = auth.getAuthHeader()
@@ -51,7 +51,7 @@ export var router = new VueRouter({
         user.authenticated ? next() : next('/')
       }
     },
-    { path: '/profil/DashboardTEst', component: DashboardTEst,
+    { path: '/profil/DashboardProf', component: DashboardProf,
       beforeEnter: (to, from, next) => {
         user.authenticated ? next() : next('/')
       }

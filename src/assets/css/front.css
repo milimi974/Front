@@ -227,7 +227,7 @@ label {
     top: 1.5rem;
     font-size: 0.8rem; }
 
-div.input-group {
+div.input-group{
   display: inline-block;
   width: auto;
   position: relative; }

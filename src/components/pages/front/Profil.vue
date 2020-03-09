@@ -91,9 +91,9 @@
       </div>
       <div class="col2">
         <label for="presentation-language"> {{$t('profile.presentationLanguage')}} </label>
-        <input type="text" id="presentation-language" name="presentation-language"/>
+        <input type="text" id="presentation-language" name="presentation-language" v-model="interface_lng"/>
         <label for="content-language"> {{$t('profile.contentLanguage')}} </label>
-        <input type="text" id="content-language" name="content-language"/>
+        <input type="text" id="content-language" name="content-language" v-model="content_lng"/>
       </div>
       <div class="clearfix"></div>
     </div>
@@ -181,7 +181,9 @@ export default {
       password: '',
       confirm: '',
       role: '',
-      statu: 'student'
+      statu: 'student',
+      content_lng: '',
+      interface_lng: ''
     }
   },
   computed: {
@@ -198,8 +200,9 @@ export default {
         username: this.username,
         name: this.firstname,
         surname: this.lastname,
-        password: this.password
-      }, 'explorer')
+        password: this.password,
+        status: this.statu
+      }, 'Home')
     },
     checkMatching (event) {
       if (this.password != this.confirm) {

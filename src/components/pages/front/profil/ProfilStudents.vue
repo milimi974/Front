@@ -127,9 +127,9 @@ export default {
     },
     role: function (l) {
       if (l.status == 'teacher') {
-        return true
-      } else {
         return false
+      } else {
+        return true
       }
     }
   },
