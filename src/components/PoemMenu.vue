@@ -1,22 +1,33 @@
 <template>
-  <div id="poem-menu">
+  <div id="poem-menu" >
     <ul class="nav navbar-nav" v-if="user.authenticated">
-      <router-link class="nav-item" tag="li" to="/dashboard">
-        <a class="nav-link" :title="$t('tooltip.dashboard')"> {{$t('menu.dashboard')}} </a>
-      </router-link>
-      <router-link class="nav-item" tag="li" to="/profil/DashboardTEst">
-        <a class="nav-link" :title="$t('tooltip.dashboard')"> {{$t('menu.dashboardtest')}} </a>
-      </router-link>
-      <router-link class="nav-item" tag="li" to="/explorer">
-        <a class="nav-link" :title="$t('tooltip.explorer')"> {{$t('menu.explorer')}} </a>
-      </router-link>
-      <router-link class="nav-item" tag="li" to="/profil/ProfilStudents">
-        <a class="nav-link" :title="$t('tooltip.profile')"> {{$t('menu.profile')}} </a>
-      </router-link>
-      <li class="nav-item">
-        <a class="nav-link" href="#" id="logout" :title="$t('tooltip.logout')" @click='logout'> {{$t('menu.logout')}} </a>
-      </li>
+        <template v-if="statu=='student'">
+          <router-link class="nav-item" tag="li" to="/dashboard">
+            <a class="nav-link" :title="$t('tooltip.dashboard')"> {{$t('menu.dashboard')}} </a>
+          </router-link>
+          <router-link class="nav-item" tag="li" to="/explorer">
+            <a class="nav-link" :title="$t('tooltip.explorer')"> {{$t('menu.explorer')}} </a>
+          </router-link>
+          <router-link class="nav-item" tag="li" to="/profil/ProfilStudents">
+            <a class="nav-link" :title="$t('tooltip.profile')"> {{$t('menu.profile')}} </a>
+          </router-link>
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="logout" :title="$t('tooltip.logout')" @click='logout'> {{$t('menu.logout')}} </a>
+          </li>
+        </template>
+        <template v-else>
+          <router-link class="nav-item" tag="li" to="/profil/DashboardTEst">
+            <a class="nav-link" :title="$t('tooltip.dashboard')"> {{$t('menu.dashboard')}} </a>
+          </router-link>
+          <router-link class="nav-item" tag="li" to="/profil/ProfilTeacher">
+            <a class="nav-link" :title="$t('tooltip.profile')"> {{$t('menu.profile')}} </a>
+          </router-link>
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="logout" :title="$t('tooltip.logout')" @click='logout'> {{$t('menu.logout')}} </a>
+          </li>
+        </template>
     </ul>
+
 
     <ul class="nav navbar-nav" v-else>
       <router-link class="nav-item" tag="li" to="/explorer">
@@ -36,6 +47,8 @@
 </template>
 
 <script>
+import axios from 'axios'
+
 require('animate.css')
 
 import PoemLogin from './PoemLogin'
@@ -48,7 +61,10 @@ export default {
   data () {
     return {
       user: auth.getUser(),
-      loginFormVisible: false
+      loginFormVisible: false,
+      poem_user: [],
+      statu: '',
+      userId: auth.getUser().id
     }
   },
   methods: {
@@ -61,6 +77,13 @@ export default {
       */
       this.loginFormVisible = !this.loginFormVisible
     }
+  },
+  mounted: function () {
+    this.fetchUrl = 'poem_users/' + this.userId
+    axios.get(this.fetchUrl)
+      .then(response => {
+        this.statu = response.data.status
+      })
   }
 }
 </script>

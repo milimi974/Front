@@ -1,50 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="73188ae7-a961-4f1c-a15e-d85fc8c24f70" name="Default Changelist" comment="">
+    <list default="true" id="73188ae7-a961-4f1c-a15e-d85fc8c24f70" name="Default Changelist" comment="VM ok">
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/collet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pages/front/profil/ProfilTeacher.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/lang/en.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/lang/en.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/lang/fr.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/lang/fr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PoemMenu.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PoemMenu.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/front/Profil.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/front/Profil.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/front/profil/ProfilStudents.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/front/profil/ProfilStudents.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/poemjs/init-lesson.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/poemjs/init-lesson.js" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="PATH_TO_GIT" value="D:\Logiciels\Git\bin\git.exe" />
+    <option name="PATH_TO_GIT" value="/usr/local/git/bin/git" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="ProjectId" id="1SpgJVxf4yCsNvqwYhitZ2YzIHw" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../Programmation/Tuto/VueJs" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.standard" value="" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.2.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/pages/front/profil" />
       <recent name="D:\Documents\POEM\Vue\Test\poem-frontend-master\src\components\pages\front\profil" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager">
     <configuration name="init-lesson.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/poemjs/init-lesson.js" working-dir="$PROJECT_DIR$/src/poemjs">
@@ -55,6 +62,18 @@
         <item itemvalue="Node.js.init-lesson.js" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -77,6 +96,26 @@
       <workItem from="1574158449460" duration="20739000" />
       <workItem from="1574239309943" duration="598000" />
       <workItem from="1574673870078" duration="2610000" />
+      <workItem from="1575462702145" duration="4354000" />
+      <workItem from="1577098423361" duration="140000" />
+      <workItem from="1577531664189" duration="487000" />
+      <workItem from="1577791593468" duration="597000" />
+      <workItem from="1578321994229" duration="3535000" />
+      <workItem from="1578839195406" duration="307000" />
+      <workItem from="1579004395535" duration="8386000" />
+      <workItem from="1579597945957" duration="314000" />
+      <workItem from="1579691577256" duration="163000" />
+      <workItem from="1580220093420" duration="1240000" />
+      <workItem from="1580391888399" duration="464000" />
+      <workItem from="1580404477380" duration="208000" />
+      <workItem from="1580847856105" duration="135000" />
+      <workItem from="1581068602341" duration="158000" />
+      <workItem from="1581179749093" duration="11659000" />
+      <workItem from="1581851316380" duration="7468000" />
+      <workItem from="1582409200928" duration="275000" />
+      <workItem from="1583325115942" duration="7438000" />
+      <workItem from="1583515341895" duration="162000" />
+      <workItem from="1583748877270" duration="279000" />
     </task>
     <task id="LOCAL-00001" summary="Access database done">
       <created>1574677584418</created>
@@ -90,6 +129,16 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -106,6 +155,49 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Access database done" />
-    <option name="LAST_COMMIT_MESSAGE" value="Access database done" />
+    <MESSAGE value="VM ok" />
+    <option name="LAST_COMMIT_MESSAGE" value="VM ok" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="462" y="171" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1575462758500">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state x="462" y="171" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.797@0.23.1440.797" timestamp="1575462758500" />
+    <state x="331" y="52" key="CommitChangelistDialog2" timestamp="1583748967159">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="331" y="52" key="CommitChangelistDialog2/1440.23.1920.1177/0.0.1440.900@0.0.1440.900" timestamp="1583748967159" />
+    <state x="100" y="100" width="1240" height="700" key="DiffContextDialog" timestamp="1579009341510">
+      <screen x="0" y="23" width="1440" height="798" />
+    </state>
+    <state x="100" y="100" width="1240" height="700" key="DiffContextDialog/0.23.1440.798@0.23.1440.798" timestamp="1579009341510" />
+    <state width="1410" height="201" key="GridCell.Tab.0.bottom" timestamp="1577096306813">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state width="1410" height="201" key="GridCell.Tab.0.bottom/0.23.1440.797@0.23.1440.797" timestamp="1577096306813" />
+    <state width="1410" height="201" key="GridCell.Tab.0.center" timestamp="1577096306807">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state width="1410" height="201" key="GridCell.Tab.0.center/0.23.1440.797@0.23.1440.797" timestamp="1577096306807" />
+    <state width="1410" height="201" key="GridCell.Tab.0.left" timestamp="1577096306805">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state width="1410" height="201" key="GridCell.Tab.0.left/0.23.1440.797@0.23.1440.797" timestamp="1577096306805" />
+    <state width="1410" height="201" key="GridCell.Tab.0.right" timestamp="1577096306808">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state width="1410" height="201" key="GridCell.Tab.0.right/0.23.1440.797@0.23.1440.797" timestamp="1577096306808" />
+    <state x="233" y="56" key="SettingsEditor" timestamp="1575464750722">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state x="233" y="56" key="SettingsEditor/0.23.1440.797@0.23.1440.797" timestamp="1575464750722" />
+    <state x="525" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1583748899021">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="525" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1440.0.1920.1200/0.0.1440.900@0.0.1440.900" timestamp="1583748899021" />
+    <state x="385" y="196" key="search.everywhere.popup" timestamp="1582409230236">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="385" y="196" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1582409230236" />
   </component>
 </project>

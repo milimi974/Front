@@ -8,8 +8,10 @@
       <h1> {{$t('profile.userAccount')}} </h1>
       <form id="form-profil" @submit.prevent='register'>
         <div class="col2">
-          <label for="role">{{$t('login.role')}}</label>
-
+          <label for="student">{{$t('login.student')}}</label>
+          <input type="radio" id="student" name="role" v-model="role"/>
+          <label for="teacher">{{$t('login.teacher')}}</label>
+          <input type="radio" id="teacher" name="role" v-model="role"/>
         </div>
         <div class="col2">
           <label for="email"> {{$t('login.email')}} </label>
@@ -177,7 +179,9 @@ export default {
       firstname: '',
       lastname: '',
       password: '',
-      confirm: ''
+      confirm: '',
+      role: '',
+      statu: 'student'
     }
   },
   computed: {

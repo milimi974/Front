@@ -12,7 +12,7 @@ export default {
   no: 'non',
   menu: {
     about: 'À propos',
-    dashboardtest: 'teeeest',
+    dashboardtest: 'Dashboard de test',
     dashboard: 'Mon tableau de bord',
     explorer: 'Explorateur des leçons',
     home: 'Accueil',
@@ -23,11 +23,6 @@ export default {
     profile: 'Mon profil',
     registration: 'Inscription'
   },
-  login: {
-    connect: 'Se connecter',
-    email: 'Adresse email ',
-    pass: 'Mot de passe '
-  },
   tooltip: {
     dashboard: 'Mon tableau de bord personnel',
     explorer: 'Explorer les leçons',
@@ -35,6 +30,13 @@ export default {
     logout: 'Se déconnecter',
     profile: 'Mes données personnelles',
     registration: 'Créer un compte'
+  },
+  login: {
+    connect: 'Se connecter',
+    email: 'Adresse email ',
+    pass: 'Mot de passe ',
+    student: 'Etudiant',
+    teacher: 'Enseignant'
   },
   messages: {
     connectionError: {
@@ -58,7 +60,7 @@ export default {
     },
     progressionSaved: {
       title: 'Progression enregistrée',
-      content: 'Vous pouvez passer à l\'étape suivante de l\'évaluation. YEEAAAAAAH'
+      content: 'Vous pouvez passer à l\'étape suivante de l\'évaluation.'
     },
     registrationSaved: {
       title: 'Inscription enregistrée',
@@ -75,22 +77,6 @@ export default {
     welcomeBack: {
       title: 'Bienvenue sur POEM',
       content: 'Heureux de vous revoir, '
-    },
-    test: {
-      title: 'test',
-      content: 'Tu es bloquée à <3 !!!!!!!'
-    },
-    test2: {
-      title: 'test',
-      content: 'Tu es bloquée à la sélection des questions !!!!!!!'
-    },
-    test3: {
-      title: 'test',
-      content: 'BIZAAAAAAARRE!!!!!!!'
-    },
-    test4: {
-      title: 'test',
-      content: 'Tu es bloqué à <9'
     }
   },
   footer: {

@@ -25,7 +25,9 @@ export default {
   login: {
     connect: 'Log in',
     email: 'Email address',
-    pass: 'Password'
+    pass: 'Password',
+    student: 'Student',
+    teacher: 'Teacher'
   },
   tooltip: {
     dashboard: 'My personnal dashboard',

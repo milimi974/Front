@@ -6,8 +6,7 @@
 
     <!-- infos personnelles -->
     <div class="basics" v-for="l in poem_user">
-      <h1 v-if="role(l)"> {{$t('profile.userAccount')}} </h1>
-      <h1 v-else> Test </h1>
+      <h1> {{$t('profile.userAccount')}} </h1>
       <form id="form-profil" @submit.prevent='register'>
         <div class="col2">
           {{$t('login.email')}}
@@ -18,7 +17,7 @@
         <div class="col2">
           {{$t('profile.username')}}
           <div class="input-group">
-           {{l.username}}
+            {{l.username}}
           </div>
         </div>
         <div class="clearfix"></div>
@@ -92,13 +91,13 @@ export default {
   },
   data () {
     return {
+      username: '',
       authenticated: auth.getUser().authenticated,
       level: [],
       avatar: '',
       domains: [],
       specialities: [],
       email: '',
-      username: '',
       firstname: '',
       lastname: '',
       password: '',
@@ -116,7 +115,7 @@ export default {
   },
   methods: {
     register () {
-      axios.put('poem_users/1', {surname: this.lastname})
+      axios.put('poem_users/1', {username: this.firstname})
     },
     checkMatching (event) {
       if (this.password != this.confirm) {
@@ -124,22 +123,15 @@ export default {
       } else {
         event.target.setCustomValidity('')
       }
-    },
-    role: function (l) {
-      if (l.status == 'teacher') {
-        return true
-      } else {
-        return false
-      }
     }
   },
   mounted: function () {
-    let requesFilter = JSON.stringify({
+    var requestFilter = JSON.stringify({
       where: {
         id: this.userId
       }
     })
-    this.fetchUrl = 'poem_users/?filter=' + requesFilter
+    this.fetchUrl = 'poem_users/?filter=' + requestFilter
     axios.get(this.fetchUrl)
       .then(res => {
         res.data.forEach(l => {
@@ -157,14 +149,9 @@ export default {
           })
         })
       })
-    this.fetchUrl = 'poem_users/' + this.userId
-    axios.get(this.fetchUrl)
-      .then(response => {
-        this.statu = response.data.status
-      })
   },
   updated: function () {
-    axios.put('poem_users/1', {name: this.firstname, surname: this.lastname})
+    axios.put('poem_users/1', {username: this.username})
   }
 }
 </script>

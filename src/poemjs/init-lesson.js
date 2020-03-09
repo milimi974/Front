@@ -261,7 +261,6 @@ function assignPhase2questions (cb) {
   axios.get('lessons/' + V.lesson.id + '/questions?filter=' + requestFilter)
     .then(res => {
       if (res.data.length < 3) {
-        notifyInfo('messages.test')
         cb(false)
         return
       }
@@ -270,7 +269,6 @@ function assignPhase2questions (cb) {
       V.asked_questions = subTab(res.data, 1, q => q.status == 'proposed' || q.status == 'validated' && (V.userId != q.id_author) && (!q.evaluations.length))
       if (!V.asked_questions.length) {
         cb(false)
-        notifyInfo('messages.test2')
         return
       }
 
@@ -281,9 +279,7 @@ function assignPhase2questions (cb) {
         initEditor('#stage2-question' + (i + 1), q.text, false)
         q.editor_id = (i + 1)
         initEditor('#stage2-answer' + q.editor_id, q.submitted_answer)
-
         axios.put('lesson_participations/' + V.participationId + '/asked_questions/rel/' + q.id)
-        notifyInfo('messages.test3')
       })
       cb(true)
     })
@@ -296,7 +292,6 @@ function assignPhase3answers (cb) {
     res.data = res.data.filter(a => a.evaluations.length < 3)
     if (res.data.length < 9) {
       cb(false)
-      notifyInfo('messages.test4')
       return
     }
 

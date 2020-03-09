@@ -10,6 +10,7 @@ import Explorer from 'components/pages/front/Explorer'
 import Lesson from 'components/pages/front/Lesson'
 import Profil from 'components/pages/front/Profil'
 import ProfilStudents from 'components/pages/front/profil/ProfilStudents'
+import ProfilTeacher from 'components/pages/front/profil/ProfilTeacher'
 import Legal from 'components/pages/front/Legal'
 import About from 'components/pages/front/About'
 import Home from 'components/pages/front/Home'
@@ -59,6 +60,9 @@ export var router = new VueRouter({
     { path: '/profil/ProfilStudents', component: ProfilStudents,
       beforeEnter: (to, from, next) => user.authenticated ? next() : next('/')
     },
+    { path: '/profil/ProfilTeacher', component: ProfilTeacher,
+      beforeEnter: (to, from, next) => user.authenticated ? next() : next('/')
+    },
     { path: '/registration', component: Profil,
       beforeEnter: (to, from, next) => user.authenticated ? next('/profil') : next()
     },
@@ -74,3 +78,4 @@ export default new Vue({
   el: '#vue-instance',
   components: { App }
 })
+
