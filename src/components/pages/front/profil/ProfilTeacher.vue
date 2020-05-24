@@ -1,81 +1,66 @@
 <template>
   <poem-main :page-name="authenticated ? 'profile' : 'registration'">
-  <div class="inputs">
-    <h1 v-if="authenticated"> {{$t('menu.profile')}} </h1>
-    <h1 v-else> {{$t('menu.registration')}} </h1>
+  <div id="po-main-container" class="po-container">
+      <div class="po-row">
+        <div class="po-col-8">
+          <div class="po-row">
+            <div class="po-col">Avatar</div>
+            <div class="po-col">Onglet
+              <ul class="po-nav">
+                <li class="po-item" data-target="#po-information-table" data-event="po-onglet">Information</li>
+                <li class="po-item" data-target="#po-message-table" data-event="po-onglet">Messages</li>
+                <li class="po-item" data-target="#po-notification-table" data-event="po-onglet">Notifications</li>
+                <li class="po-item" data-target="#po-edit-table" data-event="po-onglet">Éditer</li>
+              </ul>
+            </div>
+          </div>
+          <div id="po-information-table" class="po-row">
+              <div class="po-col-12">
+                <div class="po-form-group po-row">
+                  <div class="po-col-2 po-col-form-label">Password</div>
+                  <div class="po-col-10">
+                      <div class="po-form-control-plaintext" readonly > Password </div>
+                  </div>
+                </div>
+                <div class="po-form-group po-row">
+                  <div class="po-col-2 po-col-form-label">Password</div>
+                  <div class="po-col-10">
+                      <div class="po-form-control-readonly" readonly > Password </div>
+                  </div>
+                </div>
+                <div class="po-form-group po-row">
+                  <div class="po-col-2 po-col-form-label">Password</div>
+                  <div class="po-col-10">
+                      <div class="po-form-control-readonly" readonly > Password </div>
+                  </div>
+                </div>
+                <div class="po-form-group po-row">
+                  <div class="po-col-2 po-col-form-label">Password</div>
+                  <div class="po-col-10">
+                      <div class="po-form-control-readonly" readonly > Password </div>
+                  </div>
+                </div>
+                <div class="po-form-group po-row">
+                  <div class="po-col-2 po-col-form-label">Password</div>
+                  <div class="po-col-10">
+                      <div class="po-form-control-readonly" readonly > Password </div>
+                  </div>
+                </div>
+                <div class="po-form-group po-row">
+                  <div class="po-col-2 po-col-form-label">Password</div>
+                  <div class="po-col-10">
+                      <div class="po-form-control-readonly" readonly > Password </div>
+                  </div>
+                </div>
+              </div>
 
-    <!-- infos personnelles -->
-    <div class="basics" v-for="l in poem_user">
-      <h1> {{$t('profile.userAccount')}} </h1>
-      <form id="form-profil" @submit.prevent='register'>
-        <div class="col2">
-          {{$t('login.email')}}
-          <div class="input-group">
-           {{l.email}}
           </div>
+          <div id="po-message-table" class="po-row"></div>
+          <div id="po-notification-table" class="po-row"></div>
+          <div id="po-edit-table" class="po-row"></div>
         </div>
-        <div class="col2">
-          {{$t('profile.username')}}
-          <div class="input-group">
-            {{l.username}}
-          </div>
-        </div>
-        <div class="clearfix"></div>
-        <div class="col2">
-          {{$t('profile.firstname')}}
-          <div class="input-group">
-            {{l.firstname}}
-          </div>
-        </div>
-        <div class="col2">
-          {{$t('profile.lastname')}}
-          <div class="input-group">
-            {{l.lastname}}
-          </div>
-        </div>
-        <div class="clearfix"></div>
-        <div class="clearfix"></div>
-        <div class="validate">
-          <input v-if="authenticated" type="submit" class="btn" :value="$t('profile.save')" />
-        </div>
-      </form>
-    </div>
-
-    <!-- préférences et avatar -->
-    <div class="prefs">
-      <h1> {{$t('profile.preferences')}} </h1>
-      <div class="col2">
-        <form action="#" class="dropzone" id="avatar">
-          <div class="fallback">
-            <input type="file" id="input-avatar">
-          </div>
-        </form>
+        <dif class="po-col-4"></dif>
       </div>
-      <div class="col2">
-        <label for="presentation-language"> {{$t('profile.presentationLanguage')}} </label>
-        <input type="text" id="presentation-language" name="presentation-language"/>
-        <label for="content-language"> {{$t('profile.contentLanguage')}} </label>
-        <input type="text" id="content-language" name="content-language"/>
-      </div>
-      <div class="clearfix"></div>
-    </div>
-
-    <!-- template du drag & drop -->
-    <div id="preview-template" style="display: none;">
-      <div class="dz-preview dz-file-preview">
-        <div class="dz-image"><img data-dz-thumbnail=""></div>
-
-        <div class="dz-details">
-          <div class="dz-size"><span data-dz-size=""></span></div>
-          <div class="dz-filename"><span data-dz-name=""></span></div>
-        </div>
-        <div class="dz-progress"><span class="dz-upload" data-dz-uploadprogress=""></span></div>
-        <div class="dz-error-message"><span data-dz-errormessage=""></span></div>
-
-        <div class="dz-success-mark"><i class="fa fa-check"></i> </div>
-        <div class="dz-error-mark"><i class="fa fa-exclamation"></i></div>
-      </div>
-    </div>
   </div>
 </poem-main>
 </template>
@@ -161,3 +146,5 @@ export default {
     text-transform: capitalize;
   }
 </style>
+
+
