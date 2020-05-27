@@ -1,68 +1,128 @@
 <template>
   <poem-main :page-name="authenticated ? 'profile' : 'registration'">
-  <div id="po-main-container" class="po-container">
-      <div class="po-row">
-        <div class="po-col-8">
-          <div class="po-row">
-            <div class="po-col">Avatar</div>
-            <div class="po-col">Onglet
-              <ul class="po-nav">
-                <li class="po-item" data-target="#po-information-table" data-event="po-onglet">Information</li>
-                <li class="po-item" data-target="#po-message-table" data-event="po-onglet">Messages</li>
-                <li class="po-item" data-target="#po-notification-table" data-event="po-onglet">Notifications</li>
-                <li class="po-item" data-target="#po-edit-table" data-event="po-onglet">Éditer</li>
-              </ul>
+    <div id="po-main-container" class="po-container">
+        <div class="po-row">
+          <div class="test po-col-2 text-center">
+            <img src="" class="po-img-profile" alt="image">
+            <p>
+              <a href="">supprimer</a><span>|</span><a href="">ajouter</a>
+            </p>
+          </div>
+          <div id="test" class="test test-2 po-col-8 ">
+
+            <div id="" class="">
+
+              <h2 class="primary">John DOE</h2>
+              <div class="bbtm">
+                <ul class="po-nav secondary text-maj ">
+                  <li class="po-item" data-target="#po-information-table" data-event="po-onglet">Informations</li>
+                  <li class="po-item" data-target="#po-message-table" data-event="po-onglet">Messages</li>
+                  <li class="po-item" data-target="#po-notification-table" data-event="po-onglet">Notifications</li>
+                  <li class="po-item" data-target="#po-edit-table" data-event="po-onglet">Éditer</li>
+                </ul>
+              </div>
+            </div>
+            <div id="po-information-table" class="po-row ">
+                <div class="po-col-12">
+                  <div class="po-form-group po-row text-capitalized">
+                    <div class="po-col-2 po-col-form-label">nom</div>
+                    <div class="po-col-10">
+                        <div class="po-form-control-readonly" readonly > john </div>
+                    </div>
+                  </div>
+                  <div class="po-form-group po-row text-capitalized">
+                    <div class="po-col-2 po-col-form-label">prenom</div>
+                    <div class="po-col-10">
+                        <div class="po-form-control-readonly" readonly > doe </div>
+                    </div>
+                  </div>
+                  <div class="po-form-group po-row">
+                    <div class="po-col-2 po-col-form-label text-capitalized">adresse email</div>
+                    <div class="po-col-10">
+                        <div class="po-form-control-readonly" readonly > adresse email </div>
+                    </div>
+                  </div>
+                  <div class="po-form-group po-row text-capitalized">
+                    <div class="po-col-2 po-col-form-label">institution</div>
+                    <div class="po-col-10">
+                        <div class="po-form-control-readonly" readonly > institution </div>
+                    </div>
+                  </div>
+                  <div class="po-form-group po-row">
+                    <div class="po-col-2 po-col-form-label text-capitalized">site web</div>
+                    <div class="po-col-10">
+                        <div class="po-form-control-readonly" readonly > http </div>
+                    </div>
+                  </div>
+                  <div class="po-form-group po-row text-capitalized">
+                    <div class="po-col-2 po-col-form-label">mot de passe</div>
+                    <div class="po-col-10">
+                        <div class="po-form-control-readonly" readonly > ****** </div>
+                    </div>
+                  </div>
+                </div>
+
+            </div>
+            <div id="po-message-table" class="po-row"></div>
+            <div id="po-notification-table" class="po-row"></div>
+            <div id="po-edit-table" class="po-row">
+              <div class="po-col-12">
+                  <div class="po-form-group po-row text-capitalized">
+                    <div class="po-col-2 po-col-form-label">nom</div>
+                    <div class="po-col-10">
+                        <input type="text" class="po-form-control" aria-placeholder="" placeholder=""/>
+                    </div>
+                  </div>
+                  <div class="po-form-group po-row text-capitalized">
+                    <div class="po-col-2 po-col-form-label">prenom</div>
+                    <div class="po-col-10">
+                        <input type="text" class="po-form-control" aria-placeholder="" placeholder=""/>
+                    </div>
+                  </div>
+                  <div class="po-form-group po-row">
+                    <div class="po-col-2 po-col-form-label text-capitalized">adresse email</div>
+                    <div class="po-col-10">
+                        <input type="mail" class="po-form-control" aria-placeholder="" placeholder=""/>
+                    </div>
+                  </div>
+                  <div class="po-form-group po-row text-capitalized">
+                    <div class="po-col-2 po-col-form-label">institution</div>
+                    <div class="po-col-10">
+                      <select name="" >
+                        <option value="">empty</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="po-form-group po-row">
+                    <div class="po-col-2 po-col-form-label text-capitalized">site web</div>
+                    <div class="po-col-10">
+                        <input type="text" class="po-form-control" aria-placeholder="" placeholder=""/>
+                    </div>
+                  </div>
+                  <div class="po-form-group po-row text-capitalized">
+                    <div class="po-col-2 po-col-form-label">mot de passe</div>
+                    <div class="po-col-10">
+                        <input type="password" class="po-form-control" aria-placeholder="" placeholder=""/>
+                    </div>
+                  </div>
+                </div>
             </div>
           </div>
-          <div id="po-information-table" class="po-row">
-              <div class="po-col-12">
-                <div class="po-form-group po-row">
-                  <div class="po-col-2 po-col-form-label">Password</div>
-                  <div class="po-col-10">
-                      <div class="po-form-control-plaintext" readonly > Password </div>
-                  </div>
-                </div>
-                <div class="po-form-group po-row">
-                  <div class="po-col-2 po-col-form-label">Password</div>
-                  <div class="po-col-10">
-                      <div class="po-form-control-readonly" readonly > Password </div>
-                  </div>
-                </div>
-                <div class="po-form-group po-row">
-                  <div class="po-col-2 po-col-form-label">Password</div>
-                  <div class="po-col-10">
-                      <div class="po-form-control-readonly" readonly > Password </div>
-                  </div>
-                </div>
-                <div class="po-form-group po-row">
-                  <div class="po-col-2 po-col-form-label">Password</div>
-                  <div class="po-col-10">
-                      <div class="po-form-control-readonly" readonly > Password </div>
-                  </div>
-                </div>
-                <div class="po-form-group po-row">
-                  <div class="po-col-2 po-col-form-label">Password</div>
-                  <div class="po-col-10">
-                      <div class="po-form-control-readonly" readonly > Password </div>
-                  </div>
-                </div>
-                <div class="po-form-group po-row">
-                  <div class="po-col-2 po-col-form-label">Password</div>
-                  <div class="po-col-10">
-                      <div class="po-form-control-readonly" readonly > Password </div>
-                  </div>
-                </div>
-              </div>
+          <dif class="po-col-2">
+            <div class="po-list-card">
+              <div class="po-list-header secondary text-maj">nombre de cours</div>
+              <span class="po-label text-maj"> cours <span class="po-badge">10</span></span>
+            </div>
+            <div class="po-list-card">
+              <div class="po-list-header secondary text-maj">domaine(s) d'enseignement</div>
+              <span class="po-label text-maj"> mathématiques </span>
+              <span class="po-label text-maj"> langues </span>
+            </div>
 
-          </div>
-          <div id="po-message-table" class="po-row"></div>
-          <div id="po-notification-table" class="po-row"></div>
-          <div id="po-edit-table" class="po-row"></div>
+          </dif>
         </div>
-        <dif class="po-col-4"></dif>
-      </div>
-  </div>
-</poem-main>
+    </div>
+  </poem-main>
 </template>
 
 <script>
