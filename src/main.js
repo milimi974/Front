@@ -13,6 +13,7 @@ import ProfilTeacher from 'components/pages/front/profil/ProfilTeacher'
 import CourseCreate from 'components/pages/front/course/Create'
 import CourseEdit from 'components/pages/front/course/Edit'
 import CourseList from 'components/pages/front/course/List'
+import EvaluationList from 'components/pages/front/evaluation/List'
 import DashboardProf from 'components/pages/front/profil/DashboardProf'
 import Legal from 'components/pages/front/Legal'
 import About from 'components/pages/front/About'
@@ -73,6 +74,9 @@ export var router = new VueRouter({
       beforeEnter: (to, from, next) => user.authenticated ? next() : next('/')
     },
     { path: '/course/List', component: CourseList,
+      beforeEnter: (to, from, next) => user.authenticated ? next() : next('/')
+    },
+    { path: '/evaluation/List', component: EvaluationList,
       beforeEnter: (to, from, next) => user.authenticated ? next() : next('/')
     },
     { path: '/registration', component: Profil,

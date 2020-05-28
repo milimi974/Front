@@ -114,7 +114,13 @@
   padding-right: 0;
   padding-left: 0;
 }
-
+.align-items-center {
+    align-items: center !important;
+}
+.full-h {
+    min-height: 100%;
+    display: flex;
+}
 /** Forms **/
 #po-main-container input[type="search"],
 #po-main-container input[type="email"],
@@ -192,13 +198,33 @@
   background-color: #f5f6f9;
   color: #6c99c2;
   display: block;
-  padding: 10px 15px;
+  padding: 5px 10px;
   margin-bottom: 5px;
 }
-.po-label .po-badge{
+.po-label-white{
+  background-color: #ffffff;
+  border: 1px solid #cbcfd4;
+  color: #636a71;
+  display: block;
+  padding: 5px 10px;
+  margin-bottom: 5px;
+}
+.po-label-muted{
+  color: #6c99c2;
+  display: block;
+  padding: 5px 10px;
+  margin-bottom: 5px;
+}
+.po-label .po-badge,
+.po-label-muted .po-badge,
+.po-btn .po-badge{
   float: right;
 }
-.po-label .po-badge:after{
+.po-label-muted .po-badge{
+  background-color: #f5f6f9;
+}
+.po-label .po-badge:after,
+.po-label-muted .po-badge:after{
   content: "";
   clear: both;
 }
@@ -261,6 +287,9 @@
 .po-item{
   padding: 5px 10px 5px 0;
 }
+.po-tab.active{
+  background-color: #f5f6f9;
+}
 .po-nav-link {
     display: block;
     padding: .5rem 1rem;
@@ -290,30 +319,55 @@
   display: flex;
   -ms-flex-direction: column;
   flex-direction: column;
-  min-width: 16rem;
-  word-wrap: break-word;
+  min-width: 21.25%;
   background-color: #fff;
   background-clip: border-box;
-  border: 1px solid rgba(0,0,0,.125);
+  border-top: 1px solid rgba(0,0,0,.125);
   border-radius: 0;
   margin: 5px;
   font-size: 0.7em;
 }
+.po-card.inactive .po-card-body::after,
+.po-card.inactive .po-card-footer::after{
+  content: "";
+  position: absolute;
+  background-color: rgba(153, 145, 145, 0.16);
+  top: 0;
+  left:0;
+  width: 100%;
+  height: 100%;
+}
+.po-card.inactive .po-card-header{
+  background-color: rgba(153, 145, 145, 0.16);
+}
+.po-card.inactive .po-card-header,
+.po-card.inactive .po-card-body,
+.po-card.inactive .po-card-footer{
+  position: relative;
+}
 .po-card-header{
   padding: 5px;
   border-bottom: 1px solid rgba(0,0,0,.125);
+  border-left: 1px solid rgba(0,0,0,.125);
+  border-right: 1px solid rgba(0,0,0,.125);
+
 }
 .po-card-body{
   padding: 10px 5px;
+  border-left: 1px solid rgba(0,0,0,.125);
+  border-right: 1px solid rgba(0,0,0,.125);
+  border-bottom: 1px solid rgba(0,0,0,.125);
 }
 .po-card-footer{
-  padding: 10px 5px;
-  background-color: #3d5379;
+  border-bottom: 1px solid rgba(0,0,0,.125);
+  border-left: 1px solid rgba(0,0,0,.125);
+  border-right: 1px solid rgba(0,0,0,.125);
 }
 
 /** btn- **/
 .po-btn {
     color:#ffffff;
+    cursor:pointer;
     display: inline-block;
     font-weight: 400;
     text-align: center;
@@ -382,6 +436,12 @@
 .text-center{
   text-align: center;
 }
+.text-left{
+  text-align: left;
+}
+.text-right{
+  text-align: right;
+}
 .text-capitalized{
   text-transform: capitalize;
 }
@@ -390,6 +450,9 @@
 }
 .text-maj:first-letter {
   text-transform: uppercase;
+}
+.text-bold{
+  font-weight: bold;
 }
 /** tool **/
 .hide{
@@ -422,10 +485,13 @@
   list-style: none;
 }
 .separator{
-  margin: 10%;
+  margin: 10px 10%;
   height: 10%;
   width: 80%;
   border-bottom: 1px solid rgba(0,0,0,.125);
+}
+.border{
+  border: 1px solid rgba(0,0,0,.125);
 }
 .img-sm{
   width:15px
@@ -433,19 +499,39 @@
 .img-md{
   width:25px
 }
+.p-5{padding: 5px;}
+.p-10{padding: 10px;}
+.p-15{padding: 15px;}
+.pt-5{padding-top: 5px;}
+.pt-10{padding-top: 10px;}
+.pt-15{padding-top: 15px;}
+.m-5{margin: 5px;}
+.m-10{margin: 10px;}
+.m-15{margin: 15px;}
+.mb-5{margin-bottom: 5px;}
+.mb-10{margin-bottom: 10px;}
+.mb-15{margin-bottom: 15px;}
+.w-100{with:100%;display: block;}
 /** color **/
 .primary{color: #d96c1c !important;}
 .secondary{color: #6c99c2 !important;}
 .blue{color: #2a4d86 !important;}
 .green{color: #88b04b !important;}
+.white{color: #ffffff !important;}
+.black{color: #000000 !important;}
 .bg-primary{background-color: #d96c1c;}
 .bg-secondary{background-color: #6c99c2;}
 .bg-blue{background-color: #2a4d86;}
 .bg-green{background-color: #88b04b;}
+.bg-gray{background-color: #dadbdc;}
+.bg-white{background-color: #ffffff;}
+.bg-label{background-color: #f5f6f9;}
+
 .po-btn-primary{background-color: #d96c1c;}
 .po-btn-secondary{background-color: #6c99c2;}
 .po-btn-blue{background-color: #2a4d86;}
 .po-btn-green{background-color: #88b04b;}
+.po-btn-gray{background-color: #dadbdc;}
 
 .bbtm{
   border-bottom: 1px solid #e4e4e4;

@@ -31,35 +31,98 @@
            </div>
            <div class="po-card-body">
              <div class="po-row">
-               <div class="po-col-4">
-                 <div class="po-col-2 po-label text-maj">domaine</div>
+               <div class="po-col-4 ">
+                 <div class="po-label text-maj">domaine</div>
                </div>
                <div class="po-col-8">
-
+                 <span class="po-label-muted text-maj"> support de cours <span class="po-badge">10</span></span>
                </div>
              </div>
              <div class="po-row">
                <div class="po-col-4">
-                 <div class="po-col-2 po-label text-maj">sujet</div>
+                 <div class="po-label text-maj">sujet</div>
                </div>
-               <div class="po-col-8"></div>
+               <div class="po-col-8">
+                 <span class="po-label-muted text-maj"> questions <span class="po-badge">10</span></span>
+               </div>
              </div>
              <div class="po-row">
                <div class="po-col-4">
-                 <div class="po-col-2 po-label text-maj">domaine</div>
-                 <div class="po-col-2 po-label text-maj">sujet</div>
+                 <div class="po-label-muted text-maj"></div>
                </div>
-               <div class="po-col-8"></div>
+               <div class="po-col-8">
+                 <span class="po-label-muted text-maj"> réponses <span class="po-badge">10</span></span>
+               </div>
              </div>
            </div>
            <div class="po-card-footer">
-             footer
-             <div class="separator"></div>
-             footer
+             <div class="po-row po-no-gutters align-items-center bg-gray secondary">
+               <div class="po-col-4">
+                 <p class="full-h"><span class="text-maj">évalutation</span></p>
+               </div>
+               <div class="po-col-8 bg-white text-center p-5">
+                 <time datetime="2018-07-07"><span class="text-maj">créer le 19-03-2020</span></time>
+               </div>
+             </div>
+           </div>
+         </div>
+         <div class="po-card inactive">
+           <div class="po-card-header">
+             <span class="secondary text-maj">cours 1</span>
+             <a src="" class="float-right po-btn-menu">
+               <img class="img-sm float-right"src="~assets/img/square.png" alt="">
+               <ul class="po-list nav">
+                 <li><a class="text-maj" href="">voir cours</a></li>
+                 <li><a class="text-maj" href="">modifier cours</a></li>
+                 <li><a class="text-maj" href="">désactiver cours</a></li>
+               </ul>
+             </a>
+           </div>
+           <div class="po-card-body">
+             <div class="po-row">
+               <div class="po-col-4 ">
+                 <div class="po-label text-maj">domaine</div>
+               </div>
+               <div class="po-col-8">
+                 <span class="po-label-muted text-maj"> support de cours <span class="po-badge">10</span></span>
+               </div>
+             </div>
+             <div class="po-row">
+               <div class="po-col-4">
+                 <div class="po-label text-maj">sujet</div>
+               </div>
+               <div class="po-col-8">
+                 <span class="po-label-muted text-maj"> questions <span class="po-badge">10</span></span>
+               </div>
+             </div>
+             <div class="po-row">
+               <div class="po-col-4">
+                 <div class="po-label-muted text-maj"></div>
+               </div>
+               <div class="po-col-8">
+                 <span class="po-label-muted text-maj"> réponses <span class="po-badge">10</span></span>
+               </div>
+             </div>
+           </div>
+           <div class="po-card-footer">
+             <div class="po-row po-no-gutters align-items-center bg-gray secondary">
+               <div class="po-col-4">
+                 <p class="full-h"><span class="text-maj">évalutation</span></p>
+               </div>
+               <div class="po-col-8 bg-white text-center p-5">
+                 <time datetime="2018-07-07"><span class="text-maj">créer le 19-03-2020</span></time>
+               </div>
+             </div>
            </div>
          </div>
       </div>
-      <div class="po-row"></div>
+      <div class="po-row">
+        <router-link to="/course/Create">
+            <a href="" class="po-btn po-btn-primary text-upper m-5">ajouter cours</a>
+        </router-link>
+
+      </div>
+
     </div>
   </poem-main>
 </template>
