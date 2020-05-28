@@ -14,6 +14,8 @@ export default {
     about: 'About',
     dashboard: 'My dashboard',
     explorer: 'Lesson explorer',
+    course: 'Course',
+    evaluation: 'Evaluation',
     home: 'Home',
     legal: 'Legal notice',
     lesson: 'Lesson',
@@ -32,6 +34,8 @@ export default {
   tooltip: {
     dashboard: 'My personnal dashboard',
     explorer: 'Explore the lessons',
+    course: 'Course',
+    evaluation: 'Evaluation',
     login: 'Connect with your account',
     logout: 'Log out',
     profile: 'My personnal data',

@@ -16,6 +16,12 @@
           </li>
         </template>
         <template v-else>
+          <router-link class="nav-item" tag="li" to="/course/List">
+            <a class="nav-link" :title="$t('tooltip.course')"> {{$t('menu.course')}} </a>
+          </router-link>
+          <router-link class="nav-item" tag="li" to="/evaluation/List">
+            <a class="nav-link" :title="$t('tooltip.evaluation')"> {{$t('menu.evaluation')}} </a>
+          </router-link>
           <router-link class="nav-item" tag="li" to="/profil/DashboardProf">
             <a class="nav-link" :title="$t('tooltip.dashboard')"> {{$t('menu.dashboard')}} </a>
           </router-link>

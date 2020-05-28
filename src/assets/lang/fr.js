@@ -14,6 +14,8 @@ export default {
     about: 'À propos',
     dashboardtest: 'Dashboard de test',
     dashboard: 'Mon tableau de bord',
+    course: 'Cours',
+    evaluation: 'Évaluation',
     explorer: 'Explorateur des leçons',
     home: 'Accueil',
     legal: 'Mentions légales',
@@ -26,6 +28,8 @@ export default {
   tooltip: {
     dashboard: 'Mon tableau de bord personnel',
     explorer: 'Explorer les leçons',
+    course: 'Cours',
+    evaluation: 'Évaluation',
     login: 'Se connecter avec son compte',
     logout: 'Se déconnecter',
     profile: 'Mes données personnelles',
